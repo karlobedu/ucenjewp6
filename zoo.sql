@@ -1,5 +1,7 @@
 create database zoo;
 
+use zoo;
+
 create table zivotinja(
 sifra int,
 vrsta varchar(50),

@@ -16,41 +16,30 @@ use knjiznica;
 
 
 
-create table trener(
-sifra int not null primary key identity(1,1),
-ime varchar (50) not null,
-prezime varchar (50) not null,
-klub int not null,
-nacionalnost varchar (50) not null,
-iskustvo int not null
+create table osobe(
+sifra INT(11) not null,
+ime VARCHAR(50) not null,
+prezime VARCHAR(50) not null,
+adresa VARCHAR(50) not null,
+email VARCHAR(50) not null
 );
 
-create table igrac(
-sifra int not null primary key identity (1,1),
-ime varchar (50) not null,
-prezime varchar (50) not null,
-datum_rodenja datetime,
-pozicija int not null,
-broj_dresa varchar (50) not null,
-klub int not null
+create table vlasnik(
+sifra INT(11) not null,
+knjiga INT(11) not null
 );
 
-create table utakmica(
-sifra int not null primary key identity (1,1),
-datum datetime not null,
-vrijeme datetime not null,
-lokacija varchar (50) not null,
-stadion int not null,
-domaci_klub int not null,
-gostujuci_klub int not null
+create table clan(
+sifra INT(11) not null,
+clbroj INT(11) not null
 );
 
-create table klub(
-sifra int not null primary key identity(1,1),
-naziv int not null,
-osnovan datetime not null,
-stadion varchar (50) not null,
-predsjednik int not null,
-drzava varchar (50) not null,
-liga varchar (50) not null,
+create table knjige(
+sifra INT(11) not null,
+naslov VARCHAR(50) not null,
+pisac VARCHAR(50) not null,
+vlasnik INT(11) not null,
+clan INT(11) not null,
+datumpos DATETIME not null,
+datumvrac DATETIME not null
 );

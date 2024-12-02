@@ -1,0 +1,13 @@
+Otvoriti Command Prompt (CMD)
+Win tipka -> i napisati cmd [enter]
+pozicionirati se u dirketorij gdje je skripta
+cd C:\Users\Katedra\Documents\GitHub\EdunovaWP6
+---> promjeniti, prilagoditi putanju svojoj putanji
+izvesti naredbu
+sqlcmd -S [IME_RACUNALA] -i [IME_SKRIPTE]
+
+primjer:
+sqlcmd -S DESKTOP-BSRC3QT -i skriptawp6.sql
+
+Napomena: prije izvođenja sqlcmd pripaziti da u CMD piše
+C:\Users\Katedra\Documents\GitHub\EdunovaWP6>

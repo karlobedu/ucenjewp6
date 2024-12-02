@@ -12,12 +12,16 @@ namespace ucenje
         public static void izvedi()
         {
             // Ovo je izlaz
-            Console.WriteLine("Hello");
+            Console.Write("Unesi svoje ime: ");
+
 
             // Ulaz podataka u program
             string ime =Console.ReadLine();
 
-            Console.WriteLine(ime);
+            Console.WriteLine("Unijeli ste " + ime);
+
+            // formatirani nacin ispisa
+            Console.WriteLine("Unijeli ste {0}. Bravo!", ime);
 
 
         }

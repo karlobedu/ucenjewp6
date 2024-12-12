@@ -1,31 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ucenje
+﻿namespace Ucenje
 {
 
-    // Napišite program koji unosi ime i broj godina
+    // Napišite program koji unosi ime i broj godina osobe
 
-    // Program isposuje: Osoba XXXXXX ima YY godina.
+    // Program ispisuje: Osoba XXXXXX ima YY godina.
 
     internal class E02Z1
     {
-
+        // Ova metoda je uvijek potrebna (za sada ju "kucamo" ručno)
         public static void Izvedi()
         {
 
-            //ovdje se piše rješenje podataka
-            Console.Write("Unesi ime: ");
-            string ime = Console.ReadLine();
-            Console.Write("Unesi broj godina (cijeli broj): ");
-            int godine = int.Parse(Console.ReadLine());
+            //ovdje se piše rješenje tadatka
+           
 
-            Console.WriteLine("Osoba {0} ima {1} godina.", ime, godine);
         }
+
 
     }
 }
